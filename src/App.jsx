@@ -9,18 +9,20 @@ import List from './List'
 const App = () => {
   const [personne, setPersonne] = useState(data)
   return (
-    <main className="container">
-      <h3>{personne.length} birthdays today</h3>
-      {/* Rendu de la liste */}
-      <List person={personne} />
-      {/* Clear list */}
-      <button
-        type="button"
-        className="btn btn-block"
-        onClick={() => setPersonne([])}
-      >
-        Clear All
-      </button>
+    <main>
+      <section className="container">
+        <h3>{personne.length} birthdays today</h3>
+        {/* Rendu de la liste */}
+        <List person={personne} />
+        {/* Clear list */}
+        <button
+          type="button"
+          className="btn btn-block"
+          onClick={() => setPersonne([])}
+        >
+          Clear All
+        </button>
+      </section>
     </main>
   )
 }
