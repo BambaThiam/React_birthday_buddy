@@ -10,6 +10,7 @@ const App = () => {
   const [personne, setPersonne] = useState(data)
   return (
     <main>
+      <h1 className="titleBamba">"BAMBA - React Birthday buddy component"</h1>
       <section className="container">
         <h3>{personne.length} birthdays today</h3>
         {/* Rendu de la liste */}

@@ -270,8 +270,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column;
-  width: 90vw; */
+  flex-direction: column;
+  /* width: 90vw; */
+}
+
+.titleBamba {
+  margin: 3rem auto;
 }
 .container {
   /* border: 2px solid red; */
